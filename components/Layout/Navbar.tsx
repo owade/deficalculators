@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Navbar, SegmentedControl, Text, createStyles, Anchor } from '@mantine/core';
+import { Navbar, SegmentedControl, Text, createStyles, Anchor, ActionIcon } from '@mantine/core';
 import {
   ShoppingCart,
   License,
@@ -17,7 +17,7 @@ import {
   Receipt2,
   ReceiptRefund,
   Logout,
-  SwitchHorizontal,
+  SwitchHorizontal, BrandTwitter,
 } from 'tabler-icons-react';
 
 const useStyles = createStyles((theme, _params, getRef) => {
@@ -120,10 +120,19 @@ export function NavbarSegmented({ opened, setOpened }: Props) {
   return (
     <Navbar height={840} width={{ sm: 300 }} p="md" hiddenBreakpoint="sm" hidden={opened} className={classes.navbar}>
 
-      <Navbar.Section grow mt="sm">
+      <Navbar.Section mt="sm">
         {links}
       </Navbar.Section>
+      <Navbar.Section mt="xl" mr="sm" p="sm">
+        <ActionIcon variant="filled"
+          component="a"
+          href="https://twitter.com/owadez"
+          rel="noreferrer" target="_blank"
+        >
+          <BrandTwitter size={25} color={'#3398DC'} />
+        </ActionIcon>
 
+      </Navbar.Section>
 
     </Navbar>
   );
