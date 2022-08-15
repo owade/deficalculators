@@ -20,9 +20,9 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }): JSX
   return (
     <>
       <Head>
-        <title>Mantine next example</title>
+        <title>Defi Calculators</title>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <meta name="google-site-verification" content="0JejSSzxygMxVxk0GpcxvVsu5K3Qb0E0j8DH5RElQ_A" 
+        <meta name="google-site-verification" content="0JejSSzxygMxVxk0GpcxvVsu5K3Qb0E0j8DH5RElQ_A"
         />
         <link rel="shortcut icon" href="/android-chrome-512x512.png" />
         <link rel="icon" type="image/x-icon" href="/calculator-svgrepo-com.svg" />
